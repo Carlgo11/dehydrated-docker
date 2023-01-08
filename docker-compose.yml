@@ -5,5 +5,12 @@ services:
     env_file:
       - .env
     volumes:
-      - ./domains.txt:/etc/dehydrated/domains.txt
-      - ./certs/:/tmp/certs/
+      - ./domains.txt:/tmp/domains.txt:ro
+      - ./certs/:/persistent/certs
+      - persistent:/persistent
+    tmpfs:
+      - /tmp
+    read_only: true
+
+volumes:
+  persistent:
