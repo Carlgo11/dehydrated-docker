@@ -1,0 +1,9 @@
+version: '3'
+services:
+  certs:
+    build: .
+    env_file:
+      - .env
+    volumes:
+      - ./domains.txt:/etc/dehydrated/domains.txt
+      - ./certs/:/tmp/certs/
