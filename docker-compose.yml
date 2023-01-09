@@ -11,6 +11,7 @@ services:
     tmpfs:
       - /tmp
     read_only: true
+    restart: unless-stopped
 
 volumes:
   persistent:
