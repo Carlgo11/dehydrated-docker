@@ -1,6 +1,6 @@
 # Dehydrated Docker
 
-[Dehydrated](https://github.com/dehydrated-io/dehydrated) client, run inside a Docker container.
+[Dehydrated](https://github.com/dehydrated-io/dehydrated) client with [Cloudflare hook](https://github.com/walcony/letsencrypt-cloudflare-hook), run inside a Docker container.
 
 ## Installation
 
