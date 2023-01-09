@@ -1,6 +1,6 @@
 FROM alpine
 
-ENV CA="letsencrypt-test"
+ENV CA="letsencrypt"
 ENV PYTHONUNBUFFERED=1
 ENV USERDATA="/persistent"
 ENV TMP="/tmp"
