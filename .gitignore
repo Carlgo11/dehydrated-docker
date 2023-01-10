@@ -1,4 +1,5 @@
 .*
+!.github
 !.gitignore
 !.env.example
 domains.txt
