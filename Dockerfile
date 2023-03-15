@@ -20,7 +20,7 @@ RUN sh /init.sh
 
 # Fix CF hook
 ADD https://gist.githubusercontent.com/Carlgo11/f0ab77b76ee4f9c0081aea46773654c1/raw/b34c0bf4774fb3fe79bcf8adc0402e54eb7d09c9/hook.py $HOOK_PATH
-RUN chown 1000:1000 . /etc/dehydrated/ "$USERDATA" -R; chmod 700 "$HOOK_PATH"
+RUN chown 1000:1000 . /etc/dehydrated/ "$USERDATA" "$HOOK_PATH" -R; chmod 700 "$HOOK_PATH/hook.py"
 
 USER 1000:1000
 ENTRYPOINT dehydrated --register --accept-terms && dehydrated -c
