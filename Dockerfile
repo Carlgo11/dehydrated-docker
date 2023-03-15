@@ -5,6 +5,7 @@ ENV PYTHONUNBUFFERED=1
 ENV USERDATA="/persistent"
 ENV TMP="/tmp"
 ENV HOOK_PATH="hooks/cloudflare"
+ENV PRIVATE_KEY_RENEW="yes"
 
 COPY config.toml /etc/dehydrated/config
 WORKDIR /opt/dehydrated

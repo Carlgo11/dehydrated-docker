@@ -92,7 +92,7 @@ HOOK="${PWD}/hooks/cloudflare/hook.py"
 RENEW_DAYS="31"
 
 # Regenerate private keys instead of just signing new certificates on renewal (default: yes)
-PRIVATE_KEY_RENEW="yes"
+PRIVATE_KEY_RENEW="${PRIVATE_KEY_RENEW}"
 
 # Create an extra private key for rollover (default: no)
 #PRIVATE_KEY_ROLLOVER="no"
